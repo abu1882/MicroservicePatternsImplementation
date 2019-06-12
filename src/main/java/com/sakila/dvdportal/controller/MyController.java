@@ -21,12 +21,12 @@ public class MyController {
 	CountryService countrySrv;
 	
 	
-	@RequestMapping ("/allcities")
+	@RequestMapping ("/getallcities")
 	public List <City> getAllCities () {
 		return citySrv.getCities();
 	}
 
-	@RequestMapping ("/allcountires")
+	@RequestMapping ("/getallcountires")
 	public List <Country> getAllCountry () {
 		return countrySrv.getAllCountries();
 	}
